@@ -20,7 +20,8 @@ const keyGen = length => {
 }
 
 // Generate seed
-let seed = "JJQUOSFBMRFNWSQZLSTAVPLCBKVXCLIRJ9UCBAY9PLAKGGQYRFCUOHHXWM9YJOTLLYTIOJPSYHIDILMTI"//keyGen(81)
+let seed = keyGen(81)
+//let seed = "JJQUOSFBMRFNWSQZLSTAVPLCBKVXCLIRJ9UCBAY9PLAKGGQYRFCUOHHXWM9YJOTLLYTIOJPSYHIDILMTI"//keyGen(81)
 
 // Initialise MAM State
 let mamState = Mam.init(iota, seed)
