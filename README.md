@@ -4,12 +4,13 @@ Read more about IOTA: iota.org
 Read more about MAM: [Introducing Masked Authenticated Messaging](https://blog.iota.org/introducing-masked-authenticated-messaging-e55c1822d50e)
 
 Deep dive:
-[In depth explanation of how IOTA making a transaction](https://medium.com/biilabs/in-depth-explanation-of-how-iota-making-a-transaction-bcdd9713b939)
-[IOTA: MAM Eloquently Explained](https://medium.com/@abmushi/iota-mam-eloquently-explained-d7505863b413)
+- [In depth explanation of how IOTA making a transaction](https://medium.com/biilabs/in-depth-explanation-of-how-iota-making-a-transaction-bcdd9713b939)
+- [IOTA: MAM Eloquently Explained](https://medium.com/@abmushi/iota-mam-eloquently-explained-d7505863b413)
 
 This PoC is mainly based on repo: https://github.com/l3wi/mam.client.js 
 
 # Getting Started
+Install
 ```bash
 npm i
 ```
