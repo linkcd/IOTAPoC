@@ -1,20 +1,32 @@
 # Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+This is a PoC project to explore the possibilities of MAM in IOTA.
+Read more about IOTA: iota.org
+Read more about MAM: [Introducing Masked Authenticated Messaging](https://blog.iota.org/introducing-masked-authenticated-messaging-e55c1822d50e)
+
+Deep dive:
+[In depth explanation of how IOTA making a transaction](https://medium.com/biilabs/in-depth-explanation-of-how-iota-making-a-transaction-bcdd9713b939)
+[IOTA: MAM Eloquently Explained](https://medium.com/@abmushi/iota-mam-eloquently-explained-d7505863b413)
+
+This PoC is mainly based on repo: https://github.com/l3wi/mam.client.js 
 
 # Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+```bash
+npm i
+```
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+Put something to tangle
+```bash
+node tangleWriter.js
+```
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+Read the data from tangle, based on an address
+```bash
+node tangleReader.js
+```
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://www.visualstudio.com/en-us/docs/git/create-a-readme). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+Alternatively, you can also use https://iota-mam-explorer.now.sh/ to read data 
+
+
+# Note
+For speeding up the write and read, the code is using the same node (nodes.iota.fm) as https://iota-mam-explorer.now.sh/ 
+
