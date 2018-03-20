@@ -1,9 +1,11 @@
-var Mam = require('./mam.node.js')
 var readlineSync = require('readline-sync');
 const chalk = require('chalk')
 
 var IOTA = require('iota.lib.js')
-var iota = new IOTA({ provider: `https://nodes.testnet.iota.org:443/` })
+var Mam = require('./mam.client.js/lib/mam.node.js')
+
+//more public node can be found at https://www.tangle-nodes.com/index.php?sorts[load]=1
+var iota = new IOTA({ provider: 'https://nodes.iota.fm' })
 
 
 var root = readlineSync.question('Please input root of msg tree: ')

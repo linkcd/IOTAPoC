@@ -1,12 +1,11 @@
 const chalk = require('chalk')
 var fetch = require('node-fetch')
 var crypto = require('crypto')
-var Mam = require('./mam.node.js')
+var Mam = require('./mam.client.js/lib/mam.node.js')
 var IOTA = require('iota.lib.js')
-const powboxPatch = require('@iota/powbox.patch')
 
-var iota = new IOTA({ provider: `https://nodes.testnet.iota.org:443/` })
-powboxPatch(iota, 'https://powbox.testnet.iota.org')
+//more public node can be found at https://www.tangle-nodes.com/index.php?sorts[load]=1
+var iota = new IOTA({ provider: 'https://nodes.iota.fm' })
 
 // Random Key Generator
 const keyGen = length => {
@@ -43,6 +42,7 @@ const publish = async packet => {
     mamState = message.state
     // Attach the payload.
     await Mam.attach(message.payload, message.address)
+    console.log(chalk.green("attached"))
     console.log(chalk.green("Root: " + message.root))
     console.log(chalk.green("Address: " + message.address))
 

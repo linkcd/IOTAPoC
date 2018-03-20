@@ -1,9 +1,9 @@
-var fetch = require('node-fetch')
 var crypto = require('crypto')
-var Mam = require('./mam.node.js')
+var Mam = require('./mam.client.js/lib/mam.node.js')
 var IOTA = require('iota.lib.js')
 
-var iota = new IOTA({ provider: `https://nodes.testnet.iota.org:443/` })
+//more public node can be found at https://www.tangle-nodes.com/index.php?sorts[load]=1
+var iota = new IOTA({ provider: 'https://nodes.iota.fm' })
 
 // Random Key Generator
 const keyGen = length => {
@@ -15,7 +15,6 @@ const keyGen = length => {
     }
     return result.join('')
 }
-
 
 // Generate seed
 let seed = keyGen(81)

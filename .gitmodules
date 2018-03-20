@@ -1,0 +1,3 @@
+[submodule "mam.client.js"]
+	path = mam.client.js
+	url = https://github.com/l3wi/mam.client.js
