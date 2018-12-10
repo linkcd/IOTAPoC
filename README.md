@@ -26,9 +26,6 @@ Read the data from tangle, based on an address
 node tangleReader.js
 ```
 
-Alternatively, you can also use https://iota-mam-explorer.now.sh/ to read data 
+Alternatively, you can also use https://thetangle.org/mam to read data 
 
-
-# Note
-For speeding up the write and read, the code is using the same node (nodes.iota.fm) as https://iota-mam-explorer.now.sh/ 
 
