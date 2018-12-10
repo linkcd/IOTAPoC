@@ -13,6 +13,7 @@ This PoC is mainly based on repo: https://github.com/l3wi/mam.client.js
 Install
 ```bash
 npm i
+git submodule update --init
 ```
 
 Put something to tangle
